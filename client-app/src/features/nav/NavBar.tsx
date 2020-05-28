@@ -20,7 +20,7 @@ export const NavBar: React.FC = () => {
         <Menu.Item>
           <Button
             as={NavLink}
-            to="/createActivities"
+            to="/createActivity"
             positive
             content="Create Activity"
           />

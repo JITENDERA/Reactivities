@@ -35,7 +35,7 @@ const App: React.FC<RouteComponentProps> = ({ location }) => {
                 <Route path="/activities/:id" component={ActivitiesDetails} />
                 <Route
                   key={location.key}
-                  path={["/createActivities", "/manage/:id"]}
+                  path={["/createActivity", "/manage/:id"]}
                   component={ActivityForm}
                 />
                 <Route component={NotFound} />
