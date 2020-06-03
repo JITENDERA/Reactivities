@@ -2,7 +2,7 @@ namespace Application.Activities
 {
     public class AttendeeDto
     {
-        public string Userame { get; set; }
+        public string Username { get; set; }
 
         public string DisplayName { get; set; }
 

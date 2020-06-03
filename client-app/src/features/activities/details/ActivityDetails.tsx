@@ -6,14 +6,14 @@ import { LoadingComponent } from "../../../app/layout/LoadingComponent";
 import ActivityDetailedHeader from "./ActivityDetailedHeader";
 import { ActivityDetailedInfo } from "./ActivityDetailedInfo";
 import { ActivityDetailedChat } from "./ActivityDetailedChat";
-import { ActivityDetailedSidebar } from "./ActivityDetailedSidebar";
+import ActivityDetailedSidebar from "./ActivityDetailedSidebar";
 import { RootStoreContext } from "../../../app/stores/rootStore";
 
 interface DetailParams {
   id: string;
 }
 
-const ActivitiesDetails: React.FC<RouteComponentProps<DetailParams>> = ({
+const ActivityDetails: React.FC<RouteComponentProps<DetailParams>> = ({
   match,
   history,
 }) => {
@@ -36,10 +36,10 @@ const ActivitiesDetails: React.FC<RouteComponentProps<DetailParams>> = ({
         <ActivityDetailedChat />
       </Grid.Column>
       <Grid.Column width={6}>
-        <ActivityDetailedSidebar />
+        <ActivityDetailedSidebar attendees={activity.attendees} />
       </Grid.Column>
     </Grid>
   );
 };
 
-export default observer(ActivitiesDetails);
+export default observer(ActivityDetails);
