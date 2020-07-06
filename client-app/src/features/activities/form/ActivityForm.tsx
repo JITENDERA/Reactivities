@@ -6,7 +6,7 @@ import { observer } from "mobx-react-lite";
 import { RouteComponentProps } from "react-router";
 import { Form as FinalForm, Field } from "react-final-form";
 import { TextInput } from "../../../app/common/form/TextInput";
-import { TestAreaInput } from "../../../app/common/form/TestAreaInput";
+import { TextAreaInput } from "../../../app/common/form/TextAreaInput";
 import { SelectInput } from "../../../app/common/form/SelectInput";
 import { category } from "../../../app/common/options/categoryOptions";
 import DateInput from "../../../app/common/form/DateInput";
@@ -98,7 +98,7 @@ const ActivityForm: React.FC<RouteComponentProps<DetailPatams>> = ({
                   placeholder="Description"
                   rows={3}
                   value={activity.description}
-                  component={TestAreaInput}
+                  component={TextAreaInput}
                 />
                 <Field
                   component={SelectInput}
